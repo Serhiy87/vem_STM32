@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"vem_stm32\main.o"
+"vem_stm32\stm32f1xx_it.o"
+"vem_stm32\stm32f1xx_hal_msp.o"
+"vem_stm32\stm32f1xx_hal_dma.o"
+"vem_stm32\stm32f1xx_hal_tim_ex.o"
+"vem_stm32\stm32f1xx_hal_pwr.o"
+"vem_stm32\stm32f1xx_hal.o"
+"vem_stm32\stm32f1xx_hal_flash.o"
+"vem_stm32\stm32f1xx_hal_flash_ex.o"
+"vem_stm32\stm32f1xx_hal_rcc.o"
+"vem_stm32\stm32f1xx_hal_rcc_ex.o"
+"vem_stm32\stm32f1xx_hal_gpio.o"
+"vem_stm32\stm32f1xx_hal_gpio_ex.o"
+"vem_stm32\stm32f1xx_hal_tim.o"
+"vem_stm32\stm32f1xx_hal_cortex.o"
+"vem_stm32\system_stm32f1xx.o"
+"vem_stm32\startup_stm32f103xb.o"
+--library_type=microlib --strict --scatter "vem_STM32\vem_STM32.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "vem_STM32.map" -o vem_STM32\vem_STM32.axf
