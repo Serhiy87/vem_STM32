@@ -40,7 +40,9 @@
 #include "stm32f1xx_hal.h"
 
 /* USER CODE BEGIN Includes */
-
+//#include "time_vega.h"
+#include "time_vega.h"
+#include "vem_stm32.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -67,7 +69,7 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-
+	TimersInc();
   /* USER CODE END 1 */
 
   /* MCU Configuration----------------------------------------------------------*/
@@ -90,7 +92,7 @@ int main(void)
   MX_GPIO_Init();
 
   /* USER CODE BEGIN 2 */
-
+AppInit();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -100,7 +102,8 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
-
+		TimersInc();
+		AppCycle();
   }
   /* USER CODE END 3 */
 

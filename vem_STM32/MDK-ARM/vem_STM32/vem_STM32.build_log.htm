@@ -27,10 +27,33 @@ Project File Date:  10/22/2017
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'vem_STM32'
-compiling stm32f1xx_it.c...
+compiling vem_stm32.c...
+vem_stm32.c(4): warning:  #223-D: function "Timer16Alloc" declared implicitly
+  	testTimer = Timer16Alloc();
+vem_stm32.c(5): warning:  #223-D: function "StartTimer16" declared implicitly
+  		StartTimer16(testTimer,100);
+vem_stm32.c(9): warning:  #223-D: function "Timer16Stopp" declared implicitly
+  		if(Timer16Stopp(testTimer)){
+vem_stm32.c(11): warning:  #223-D: function "StartTimer16" declared implicitly
+  			StartTimer16(testTimer,20);
+vem_stm32.c: 4 warnings, 0 errors
+compiling main.c...
+..\PLC\time_vega.h(377): warning:  #186-D: pointless comparison of unsigned integer with zero
+  		 
+imer8AllocErr() || Timer16AllocErr() || Timer32AllocErr() );
+..\PLC\time_vega.h(377): warning:  #186-D: pointless comparison of unsigned integer with zero
+  		 
+imer8AllocErr() || 
+imer16AllocErr() || Timer32AllocErr() );
+..\PLC\time_vega.h(377): warning:  #186-D: pointless comparison of unsigned integer with zero
+  		 
+imer8AllocErr() || 
+imer16AllocErr() || 
+imer32AllocErr() );
+../Src/main.c: 3 warnings, 0 errors
 linking...
-Program Size: Code=2576 RO-data=284 RW-data=12 ZI-data=1028  
-"vem_STM32\vem_STM32.axf" - 0 Error(s), 0 Warning(s).
+Program Size: Code=3112 RO-data=284 RW-data=56 ZI-data=1128  
+"vem_STM32\vem_STM32.axf" - 0 Error(s), 7 Warning(s).
 
 <h2>Software Packages used:</h2>
 

@@ -16,6 +16,7 @@
 "vem_stm32\stm32f1xx_hal_cortex.o"
 "vem_stm32\system_stm32f1xx.o"
 "vem_stm32\startup_stm32f103xb.o"
+"vem_stm32\vem_stm32.o"
 --library_type=microlib --strict --scatter "vem_STM32\vem_STM32.sct"
 --diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

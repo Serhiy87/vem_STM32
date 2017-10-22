@@ -173,13 +173,11 @@ void SysTick_Handler(void)
   HAL_SYSTICK_IRQHandler();
   /* USER CODE BEGIN SysTick_IRQn 1 */
 	static uint16_t counter =0;
-	if(counter == 1000){
-	HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_13);
+	if(counter == 10){
 		counter = 0;
-	}
-	else{
-	counter++;
-	}
+		SoftTimersCallback();
+	}else {counter++;};
+
   /* USER CODE END SysTick_IRQn 1 */
 }
 

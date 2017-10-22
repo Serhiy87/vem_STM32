@@ -23,3 +23,5 @@ vem_stm32\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
 vem_stm32\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
 vem_stm32\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 vem_stm32\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
+vem_stm32\main.o: ..\PLC\time_vega.h
+vem_stm32\main.o: ..\MDK-ARM\vem_stm32.h
